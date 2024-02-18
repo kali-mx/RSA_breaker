@@ -7,5 +7,9 @@ is a python script that automates all the steps and calculations to solve the Tr
 
 
 
-https://github.com/kali-mx/RSA_breaker/assets/76034874/9a4e087b-301d-4d7b-ab30-15b14c3e874c
+
+
+https://github.com/kali-mx/RSA_breaker/assets/76034874/4e40d6c2-00ab-4f39-bd7d-0740a2aaa5be
+
+
 
