@@ -1,5 +1,6 @@
 # RSA Breaker 
-is a python script that automates all the steps and calculations to solve the TryHackme.com lab entited: **Breaking RSA**
+is a python script that automates all the steps and calculations to solve the TryHackme.com lab entitled: [**Breaking RSA**](https://tryhackme.com/jr/breakrsa)
+
 
 `git clone https://github.com/kali-mx/RSA_breaker.git` 
 
