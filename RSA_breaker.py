@@ -128,5 +128,5 @@ print("LOGGING IN AS ROOT VIA SSH WITH THE NEWLY MINTED PRIVATE KEY...")
 remote_command = "cat flag"
 cmd= f"ssh -i ssh_private_key.pem -o StrictHostKeyChecking=no root@{IP} {remote_command}"
 stdout = subprocess.check_output(cmd, shell=True, text=True)
-print(f"\nYour flag is: {Fore.GREEN}Uncomment line 125 to activate{Style.RESET_ALL}")
+print(f"\nYour flag is: {Fore.GREEN}Uncomment line below this to activate{Style.RESET_ALL}")
 #print(f"\nYour flag is: {Fore.GREEN}{stdout}{Style.RESET_ALL}")
