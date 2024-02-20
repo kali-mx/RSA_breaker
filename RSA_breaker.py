@@ -1,5 +1,12 @@
 #!/usr/bin/python3
 
+# author: Max Ahartz
+# inpired by: THM
+# created: Feb 18, 2024
+# description: automates RSA Cracking in tryhackme.com lab: Breaking RSA
+# tested on Mac ARM,Linux x86
+
+
 from colorama import Fore, Style
 import gmpy2, os, subprocess
 import pyfiglet
@@ -10,7 +17,7 @@ from cryptography.hazmat.primitives.asymmetric import rsa
 
 # title
 os.system("clear")
-banner = pyfiglet.figlet_format("RSA Cracker")
+banner = pyfiglet.figlet_format("RSA Breaker")
 print(banner)
 
 def modinv(e, m):
@@ -99,7 +106,7 @@ print(f"THE LAST 10 DIGITS OF MODULUS ARE: {Fore.GREEN}{last_10_digits}{Style.RE
 
 p, q = factorize(n)
 
-#What is the numerilscal difference between p and q
+#What is the numerical difference between p and q
 print(f"\nDIFFERENCE BETWEEN p AND q: {Fore.GREEN}{p-q}{Style.RESET_ALL}")
 
 d = calculate_d(p, q)
@@ -121,5 +128,5 @@ print("LOGGING IN AS ROOT VIA SSH WITH THE NEWLY MINTED PRIVATE KEY...")
 remote_command = "cat flag"
 cmd= f"ssh -i ssh_private_key.pem -o StrictHostKeyChecking=no root@{IP} {remote_command}"
 stdout = subprocess.check_output(cmd, shell=True, text=True)
-print(f"\nYour flag is: {Fore.GREEN}{stdout}{Style.RESET_ALL}")
-
+print(f"\nYour flag is: {Fore.GREEN}Uncomment line 125 to activate{Style.RESET_ALL}")
+#print(f"\nYour flag is: {Fore.GREEN}{stdout}{Style.RESET_ALL}")
