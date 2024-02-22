@@ -13,7 +13,6 @@ This Python script is designed to break RSA encryption by factorizing the RSA mo
 
 ## Features
 
-- **Clears Screen**: Prepares the terminal for clean output display.
 - **Banner Display**: Utilizes `pyfiglet` to display "RSA Breaker" as a stylized banner.
 - **Modular Inverse Calculation**: Contains a function to compute the modular inverse, critical for RSA decryption.
 - **RSA Modulus Factorization**: Implements an algorithm to factorize the RSA modulus into its prime factors (p and q).
